@@ -47,7 +47,7 @@ Estos transformadores tienen altas tasas de éxito cuando se trata de modelos NL
 Además, los modelos ViT superan a las CNN en casi cuatro veces en lo que respecta a la eficiencia y precisión computacional. La capa de autoatención en ViT hace posible incrustar información globalmente en la imagen general. El modelo también aprende datos de entrenamiento para codificar la ubicación relativa de los parches de imagen para reconstruir la estructura de la imagen.  
 
 El codificador de transformador incluye:
-* Multi-Head Self Attention Layer (MSP): This layer concatenates all the attention outputs linearly to the right dimensions. The many attention heads help train local and global dependencies in an image.  
+* Capa de autoatención de varios cabezales (MSP): esta capa concatena todas las salidas de atención de forma lineal en las dimensiones correctas. Los muchos cabezales de atención ayudan a entrenar dependencias locales y globales en una imagen.    
 * Capa de perceptrones multicapa (MLP): esta capa contiene una unidad lineal de error gaussiano (GELU) de dos capas.  
 * Norma de capa (LN): se agrega antes de cada bloque, ya que no incluye nuevas dependencias entre las imágenes de entrenamiento. Esto ayuda a mejorar el tiempo de entrenamiento y el rendimiento general.  
 
